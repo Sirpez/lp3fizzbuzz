@@ -16,9 +16,11 @@ class FizzBuzz
 
   def count( nums )
     result = []
+
     for i in nums
       result.push fizzBuzz(i)
     end
+
     return result
   end
 end
