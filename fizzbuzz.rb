@@ -2,13 +2,9 @@ class FizzBuzz
   def fizzBuzz (num)
     if num%3 == 0 && num%5 == 0
       return "FizzBuzz"
-    end
-
-    if num%3 == 0
+    elsif num%3 == 0
       return "Fizz"
-    end
-
-    if num%5 == 0
+    elsif num%5 == 0
       return "Buzz"
     end
 
@@ -16,10 +12,10 @@ class FizzBuzz
   end
 
   def count( nums )
-    c = []
+    result = []
     for i in nums
-      c.push fizzBuzz(i)
+      result.push fizzBuzz(i)
     end
-    return c
+    return result
   end
 end
