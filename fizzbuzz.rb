@@ -1,10 +1,15 @@
 class FizzBuzz
+  def divisibleBy ( dividend, divisor )
+    return dividend%divisor == 0
+  end
+
   def fizzBuzz (num)
-    if num%3 == 0 && num%5 == 0
+
+    if divisibleBy(num,3) && divisibleBy(num,5)
       return "FizzBuzz"
-    elsif num%3 == 0
+    elsif divisibleBy(num,3)
       return "Fizz"
-    elsif num%5 == 0
+    elsif divisibleBy(num,5)
       return "Buzz"
     end
 
