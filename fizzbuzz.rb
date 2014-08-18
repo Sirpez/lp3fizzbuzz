@@ -4,15 +4,13 @@ class FizzBuzz
   end
 
   def fizzBuzz (num)
-
     if divisibleBy(num,3) && divisibleBy(num,5)
-      return "FizzBuzz"
+      num = "FizzBuzz"
     elsif divisibleBy(num,3)
-      return "Fizz"
+      num = "Fizz"
     elsif divisibleBy(num,5)
-      return "Buzz"
+      num = "Buzz"
     end
-
     return num
   end
 
