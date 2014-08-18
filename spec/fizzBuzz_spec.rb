@@ -27,4 +27,8 @@ describe FizzBuzz do
   it "de 13 a 15 deve ser [13,14,FizzBuzz]" do
     expect(@fizzBuzz.count(13..15)).to eq([13,14,"FizzBuzz"])
   end
+
+  # it "imprime de 0 a 100" do
+  #   expect{print @fizzBuzz.count(0..100)}.not_to raise_error
+  # end
 end
