@@ -1,7 +1,5 @@
 class FizzBuzz
-  for i in 1..100 
-    
-  end
+
   def fizzBuzz (num)
     if num%3 == 0 && num%5 == 0
       return "FizzBuzz"
@@ -16,5 +14,13 @@ class FizzBuzz
     end
 
     return num
+  end
+
+  def count( from, to )
+    nums = []
+    for i in from..to
+      nums.push fizzBuzz(i)
+    end
+    return nums
   end
 end
