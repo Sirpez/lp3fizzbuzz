@@ -1,6 +1,6 @@
 class FizzBuzz
   def divisibleBy ( dividend, divisor )
-    return dividend%divisor == 0
+    dividend%divisor == 0
   end
 
   def fizzBuzz (num)
