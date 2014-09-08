@@ -1,8 +1,11 @@
-class Map
-  attr_accessor :esquinas
+require 'debugger'
 
-  def initialize(nodes)
-    esquinas = nodes
+class Map
+  attr_accessor :corners, :streets
+
+  def initialize(nodes, streets)
+    @corners = nodes
+    @streets = streets
   end
 end
 
