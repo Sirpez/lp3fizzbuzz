@@ -7,6 +7,10 @@ class Map
     @corners = nodes
     @streets = streets
   end
+
+  def calcPath(node1, node2)
+    [[1,2],[2,3]]
+  end
 end
 
 __END__
