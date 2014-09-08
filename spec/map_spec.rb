@@ -13,6 +13,6 @@ describe Map do
 
   it "Acha caminho entre uma esquina e outra" do
     #expect(@map.calcPath(1,3)).to eq( [ [1,2], [2,3] ] )
-    expect(@map.calcPath(2,3)).to eq( [ [2,3] ] )
+    expect(@map.calcPath(2,3)).to eq( [2,3,1] )
   end
 end

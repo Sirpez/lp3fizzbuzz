@@ -9,8 +9,10 @@ class Map
   end
 
   def calcPath(node1, node2)
-    if( node2 - node1 == 1)
-      [[node1, node2]]
+    @streets.each do |street|
+      if (street[0] == node1 && street[1] == node2)
+        return street
+      end
     end
   end
 end
